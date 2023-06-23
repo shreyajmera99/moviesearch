@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  body {
+    height: 100vh;
+    background: linear-gradient(#000000 50%, #d70d17 50%);
+  }
+  .heads{
+    display: flex;
+    justify-content: center;
+  }
+ .dec{
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 2em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+ .highlight {
+    color: #d70d17;
+  }
+  #imgscc{
+    width: 4em;
+    margin-top: 2em;
+    height: 2.5em;
+  }
+  .container {
+    font-size: 16px;
+    width: 90vw;
+    max-width: 37.5em;
+    padding: 3em 1.8em;
+    background-color: #201f28;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 0.6em;
+    box-shadow: 1.2em 2em 3em rgba(0, 0, 0, 0.2);
+  }
+  .scontainer {
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 1.2em;
+  }
+  .scontainer input,
+  .scontainer button {
+    font-size: 0.9em;
+    outline: none;
+    border-radius: 0.3em;
+  }
+  .scontainer input {
+    background-color: transparent;
+    border: 1px solid #a0a0a0;
+    padding: 0.7em;
+    color: #ffffff;
+  }
+  .scontainer input:focus {
+    border-color: #ffffff;
+  }
+  .scontainer button {
+    background-color: #d70d17;
+    border: none;
+    cursor: pointer;
+    color: white;
+  }
+  .scontainer button:hover{
+    background-color: #ffffff;
+    color: #d70d17;
+  }
+  #result {
+    color: #ffffff;
+  }
+  .info {
+    position: relative;
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+    align-items: center;
+    margin-top: 1.2em;
+  }
+.poster {
+  width: 100%;
+}
+h2 {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+  }
+  .rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6em;
+    margin: 0.6em 0 0.9em 0;
+  }
+  .rating img {
+    width: 1.2em;
+  }
+.details{
+    display: flex;
+    justify-content:center;
+    margin: 0.8em 0;
+    gap: 1em;
+    font-size: 0.8em;
+    color: #a0a0a0;
+    /* align-items: center; */
+}
+.genre {
+    display: flex;
+    justify-content: space-evenly;    
+    /* margin: 0.8rem 2em; */
+    /* padding: 0.4em 1.6em; */
+    gap: 0.4em;
+
+  }
+  .genre div {
+    border: 1px solid #a0a0a0;
+    font-size: 0.75em;
+    padding: 0.4em 1.6em;
+    border-radius: 0.4em;
+    font-weight: 300;
+  }
+.actors {
+    display: flex;
+    justify-content: center;    
+    margin: 0.8em 1rem; 
+    /* padding: 0.4em 1.6em; */
+    gap: 1em;
+
+  }
+  .actors div {
+    border: 1px solid #a0a0a0;
+    font-size: 0.75em;
+    padding: 0.4em 1.6em;
+    border-radius: 0.4em;
+    font-weight: 300;
+  }
+
+  @media screen and (max-width: 600px) {
+    .container {
+      font-size: 14px;
+    }
+    .info {
+      grid-template-columns: 1fr;
+    }
+    .poster {
+      margin: auto;
+      width: auto;
+      max-height: 10.8em;
+    }
+    .dec{
+        font-size: 1em;
+    }
+  }
