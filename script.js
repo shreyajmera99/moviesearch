@@ -7,7 +7,7 @@ const resultDiv = document.getElementById('result');
 let key = "2921c1e";
 let fetchmovie=()=>{
     let movienames = moviename.value
-    // let url = `http://www.omdbapi.com/t=${movienames}&apikey=2921c1e`
+    // let url = `https://www.omdbapi.com/t=${movienames}&apikey=2921c1e`
     if(movienames.length <=0){
         resultDiv.innerHTML = `<h3 class "msg">Please Enter a Movie name</h3>`
 
