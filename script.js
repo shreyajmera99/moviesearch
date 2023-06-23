@@ -13,7 +13,7 @@ let fetchmovie=()=>{
 
     }
     else{
-    let url = `http://www.omdbapi.com/?t=${movienames}&apikey=${key}`
+    let url = `https://www.omdbapi.com/?t=${movienames}&apikey=2921c1e`
     fetch(url).then(response => response.json()).then((data =>{
    
         
