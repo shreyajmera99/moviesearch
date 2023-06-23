@@ -8,6 +8,9 @@
     height: 100vh;
     background: linear-gradient(#000000 50%, #d70d17 50%);
   }
+  .pone{
+    color: white;
+  }
   .heads{
     display: flex;
     justify-content: center;
