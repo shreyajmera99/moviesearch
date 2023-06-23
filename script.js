@@ -46,4 +46,5 @@ let fetchmovie=()=>{
 }
 
 button.addEventListener('click',fetchmovie)
+window.addEventListener("load", getMovie);
 
