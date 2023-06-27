@@ -11,7 +11,7 @@ let key = "2921c1e";
     let url = `https://www.omdbapi.com/?t=${movieName}&apikey=${key}`;
 
     if (movieName.length <= 0) {
-      resultDiv.innerHTML = `<h3 class="msg">Please Enter a Movie Name</h3>`;
+      resultDiv.innerHTML = `<p class="pone">Please Enter a Movie Name</p>`;
     } else {
       fetch(url)
         .then(response => response.json())
@@ -39,11 +39,11 @@ let key = "2921c1e";
               </div>
             `;
           } else {
-            resultDiv.innerHTML = `<h3 class="msg">Oops! Could not find the movie. Try searching another movie.</h3>`;
+            resultDiv.innerHTML = `<p class="pone">Oops! Could not find the movie. Try searching another movie.</p>`;
           }
         })
         .catch(error => {
-          resultDiv.innerHTML = `<h3 class="msg">Oops! An error occurred. Please try again later.</h3>`;
+          resultDiv.innerHTML = `<p class="pone">Oops! An error occurred. Please try again later.</p>`;
           console.error(error);
         });
     }
