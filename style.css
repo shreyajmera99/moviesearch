@@ -46,9 +46,11 @@
     box-shadow: 1.2em 2em 3em rgba(0, 0, 0, 0.2);
   }
   .scontainer {
-    display: grid;
-    /* grid-template-columns:9fr 3fr; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 1.2em;
+    margin-top: 20px;
 
   }
   .scontainer input,
@@ -78,8 +80,10 @@
     border: none;
     cursor: pointer;
     color: white;
-    width: 100%;
+    width: 40%;
     padding: 0.7em 0.7em;
+    display: flex;
+    justify-content: center;
 
   }
   .scontainer button:hover{
